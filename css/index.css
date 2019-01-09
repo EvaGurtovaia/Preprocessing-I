@@ -140,17 +140,20 @@ html {
 .main {
   margin: 0 auto;
   padding: 0 3%;
+  color: #3d3c3c;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   max-width: 880px;
   font-size: 1.6rem;
+  font-family: 'Quicksand', sans-serif;
 }
 .main .header {
   display: flex;
   flex-direction: row;
   background-color: #d2c2e0;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
+  padding-top: 10px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -162,11 +165,14 @@ html {
 .main .div1 .link {
   display: inline-block;
   text-decoration: none;
+  color: #3d3c3c;
+  font-size: 2rem;
 }
 .main .h1header {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
+  font-size: 3.2rem;
 }
 .main .div2 {
   display: flex;
@@ -178,29 +184,57 @@ html {
   text-align: justify;
   padding-top: 30px;
 }
+.main .upper2 {
+  flex-direction: column;
+  text-align: justify;
+  padding-top: 10px;
+}
 .main .div3 {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: rgba(211, 211, 211, 0.756);
 }
-.main .middle {
+.main .div3 .middle {
   display: flex;
   flex-direction: column;
   text-align: justify;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
-.main .div4 {
+.main h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2.2rem;
+  padding: 25px 0;
+}
+.main h3 .div4 {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: rgba(211, 211, 211, 0.756);
+  padding-bottom: 25px;
 }
 .main .div5 {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #d2c2e0;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.main .div5 .link {
+  display: inline-block;
+  text-decoration: none;
+}
+.main .div5 nav {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  line-height: 25px;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
 }

@@ -72,18 +72,23 @@ html {
 @gray: rgba(211, 211, 211, 0.756);
 @headerscolor: @lavender;
 @lavender: rgb(210, 194, 224);
+@fontcolor: rgb(61, 60, 60);
+@fontstyle: 'Quicksand', sans-serif;
 .main {
     margin: 0 auto;
     padding: 0 3%;
 	display: flex;
+	color: @fontcolor;
 	.flex(column, stretch);
     max-width: 880px;
 	font-size: 1.6rem;
+	font-family: @fontstyle;
 	.header {
 		display: flex;
 		flex-direction: row;
 		background-color: @lavender;
-		padding-bottom: 25px;
+		padding-bottom: 30px;
+		padding-top: 10px;
 		.padding;
 	}
 	.div1{
@@ -93,12 +98,16 @@ html {
 		.link{
 			display: inline-block;
 			text-decoration: none;
+			color: rgb(61, 60, 60);
+			font-size: 2rem;
+			
 		}
 	}
 	.h1header{
 		display: flex;
 		flex-direction: column;
 		padding-top: 30px;
+		font-size: 3.2rem; 
 	}
 	.div2{
 		display: flex;
@@ -110,32 +119,60 @@ html {
 		flex-direction: column;
 		text-align: justify;
 		padding-top: 30px;
+		
 		}
+	.upper2{
+		flex-direction: column;
+		text-align: justify;
+		padding-top: 10px;
+	}
 	.div3{
 		display: flex;
 		flex-direction: column;
-		padding-left: 20px;
-		padding-right: 20px;
-		background-color: @main;
-	
-	}	
+		.padding;
+		background-color: @main;	
 	.middle{
 		display: flex;
 		flex-direction: column;
 		text-align: justify;
+		padding-bottom: 10px;
+		padding-top: 10px;
 	}
-	.div4{display: flex;
+}
+	h2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		font-size: 2.2rem;
+		padding: 25px 0;
+		}
+	h3	
+	
+	.div4{
+		display: flex;
 		flex-direction: column;
-		padding-left: 20px;
-		padding-right: 20px;
+		.padding;
 		background-color: @main;
+		padding-bottom: 25px;
 
 	}
-	.div5{display: flex;
+	.div5{
+		display: flex;
 		flex-direction: column;
-		padding-left: 20px;
-		padding-right: 20px;
 		background-color: @lavender;
-		
+		padding-bottom: 25px;
+		padding-top: 25px;
+		.link {
+			display: inline-block;
+			text-decoration: none;
+		}
+		nav {
+			display: flex;
+			justify-content: space-between; 
+			height: 20px;
+			line-height: 25px;
+			width: 100%;
+			.padding;
+		  }
 	}
 }
