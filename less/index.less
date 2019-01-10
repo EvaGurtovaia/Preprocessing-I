@@ -83,6 +83,7 @@ html {
     max-width: 880px;
 	font-size: 1.6rem;
 	font-family: @fontstyle;
+
 	.header {
 		display: flex;
 		flex-direction: row;
@@ -90,17 +91,22 @@ html {
 		padding-bottom: 30px;
 		padding-top: 10px;
 		.padding;
+
 	}
 	.div1{
 		display: flex;
 		flex-direction: column;
 		width: 50%;
+		
 		.link{
 			display: inline-block;
 			text-decoration: none;
 			color: rgb(61, 60, 60);
 			font-size: 2rem;
-			
+			word-break: break-word;
+			@media (max-width: 500px) {
+				font-size: 1.8rem;
+			}
 		}
 	}
 	.h1header{
@@ -108,23 +114,28 @@ html {
 		flex-direction: column;
 		padding-top: 30px;
 		font-size: 3.2rem; 
+		font-weight: 1000;
 	}
 	.div2{
 		display: flex;
 		flex-direction: column;
 		width: 50%;
-
+		
 	}
 	.upper{
 		flex-direction: column;
-		text-align: justify;
 		padding-top: 30px;
+		@media (min-width: 500px) {
+			text-align: justify;	
+		}
 		
 		}
 	.upper2{
 		flex-direction: column;
-		text-align: justify;
 		padding-top: 10px;
+		@media (min-width: 500px) {
+			text-align: justify;	
+		}
 	}
 	.div3{
 		display: flex;
@@ -135,8 +146,6 @@ html {
 		display: flex;
 		flex-direction: column;
 		text-align: justify;
-		padding-bottom: 10px;
-		padding-top: 10px;
 	}
 }
 	h2 {
@@ -145,9 +154,24 @@ html {
 		justify-content: center;
 		font-size: 2.2rem;
 		padding: 25px 0;
+		font-weight: 800;
 		}
-	h3	
-	
+	h3	{
+		display: flex;
+	flex-direction: row;
+	font-size: 2rem;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-weight: 600;
+
+}
+	h4 {
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 5px;
+		font-style: italic;
+
+	}
 	.div4{
 		display: flex;
 		flex-direction: column;
@@ -156,12 +180,19 @@ html {
 		padding-bottom: 25px;
 
 	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		.padding;
+		list-style-type: square;
+	}
 	.div5{
 		display: flex;
 		flex-direction: column;
 		background-color: @lavender;
 		padding-bottom: 25px;
 		padding-top: 25px;
+		
 		.link {
 			display: inline-block;
 			text-decoration: none;
